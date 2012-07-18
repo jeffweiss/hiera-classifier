@@ -18,7 +18,7 @@ class Hiera
 
           if key == 'classes'
             connect
-            data = @db[:sources_classes].filter(:source_name => source).map(:class_name)
+            data = @db[:sources_classes].filter(:source_id => source).map(:class_name)
           else
             next
           end
